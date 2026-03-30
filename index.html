@@ -3,29 +3,21 @@
 <head>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body { background-color: #ffffff; color: #111827; font-family: 'Inter', sans-serif; }
-        .card { background: #f9fafb; border: 1px solid #e5e7eb; transition: 0.2s; }
-        .card:hover { border-color: #111827; background: #ffffff; }
+        body { background-color: #0f172a; color: #f1f5f9; font-family: 'Inter', sans-serif; }
+        .sea-card { background: rgba(30, 41, 59, 0.4); border-left: 4px solid #38bdf8; }
+        .btn-sea { background: #38bdf8; color: #0f172a; }
     </style>
 </head>
-<body class="antialiased">
-    <nav class="max-w-7xl mx-auto p-10 flex justify-between items-center">
-        <div class="text-xl font-black tracking-tight">wefiletrademark.</div>
-        <div class="space-x-8 text-sm font-medium text-gray-500">
-            <a href="#" class="hover:text-black">Services</a> <a href="#" class="hover:text-black">Transparency</a>
+<body class="p-10">
+    <div class="max-w-6xl mx-auto">
+        <div class="text-2xl font-bold mb-32 tracking-tight">Wefile<span class="text-sky-400">trademark</span></div>
+        <h1 class="text-5xl md:text-7xl font-bold mb-10">Secure your legacy <br>with confidence.</h1>
+        <p class="text-sky-200/60 text-xl max-w-2xl mb-12 italic">Established protection for the modern Indian enterprise.</p>
+        <div class="bg-white/5 p-4 rounded-xl flex gap-4 max-w-2xl mb-20">
+            <input class="bg-transparent flex-1 px-4 outline-none" placeholder="Enter App Number">
+            <button class="btn-sea px-8 py-3 rounded-lg font-bold text-sm uppercase">Track Brand</button>
         </div>
-    </nav>
-    <main class="max-w-4xl mx-auto py-20 px-6">
-        <h1 class="text-6xl md:text-8xl font-black tracking-tighter mb-10 leading-[0.9]">Renewals made <br><span class="text-gray-400 underline decoration-1 underline-offset-8">painlessly simple.</span></h1>
-        <p class="text-2xl text-gray-500 mb-16 leading-tight">We removed the complex legal jargon. We removed the hidden commissions. Just clear, honest trademark protection.</p>
-        <div class="flex flex-col md:flex-row gap-4 mb-20">
-            <input class="flex-1 border-b-2 border-black py-4 outline-none text-xl placeholder-gray-300" placeholder="Your Application Number">
-            <button class="bg-black text-white px-12 py-5 font-bold uppercase text-[10px] tracking-widest">Get Started</button>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-            <div class="card p-10"><h3 class="font-bold text-xl mb-4">Zero Broker Markup</h3><p class="text-gray-500">Pay the government fee directly. Our service fee is flat and public.</p></div>
-            <div class="card p-10"><h3 class="font-bold text-xl mb-4">Real-Time Status</h3><p class="text-gray-500">No more follow-up calls. See your status updated live on your dashboard.</p></div>
-        </div>
-    </main>
+        <div class="sea-card p-10 rounded-r-xl"><p class="text-sky-400 font-bold uppercase text-xs mb-2">Service Status</p><p class="text-2xl">TM Registry active. Processing time: 24h.</p></div>
+    </div>
 </body>
 </html>
