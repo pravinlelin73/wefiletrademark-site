@@ -3,110 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wefiletrademark | Expert Trademark Renewals & Restorations</title>
+    <title>Wefiletrademark | The Transparency Engine</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono&display=swap" rel="stylesheet">
     <style>
-        body { font-family: Arial, sans-serif; }
-        .bg-corporate { background-color: #1e3a8a; } /* Muted Dark Blue */
+        body { font-family: 'Inter', sans-serif; background-color: #020617; }
+        .mono { font-family: 'JetBrains Mono', monospace; }
+        .glass { background: rgba(15, 23, 42, 0.8); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255,255,255,0.1); }
+        .hero-gradient { background: radial-gradient(circle at top center, #1e293b 0%, #020617 100%); }
+        .bento-card { background: rgba(30, 41, 59, 0.3); border: 1px solid rgba(255,255,255,0.05); transition: all 0.3s ease; }
+        .bento-card:hover { border-color: #10B981; transform: translateY(-2px); }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body class="text-slate-200 antialiased">
 
-    <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="text-2xl font-bold text-blue-900 tracking-tighter">
-                WEFILE<span class="text-blue-600">TRADEMARK</span>
+    <nav class="glass fixed w-full z-50 top-0">
+        <div class="max-w-7xl mx-auto px-6 h-16 flex justify-between items-center">
+            <div class="text-xl font-extrabold tracking-tighter text-white">
+                WEFILE<span class="text-emerald-500">TRADEMARK</span>
             </div>
-            <div class="hidden md:flex space-x-8 font-medium text-sm uppercase tracking-wide">
-                <a href="#" class="hover:text-blue-600">Services</a>
-                <a href="#" class="hover:text-blue-600">Pricing</a>
-                <a href="#" class="hover:text-blue-600">About Us</a>
-                <a href="mailto:contact@wefiletrademark.com" class="text-blue-700 border border-blue-700 px-4 py-2 rounded hover:bg-blue-50 transition">Get Started</a>
+            <div class="hidden md:flex space-x-8 text-xs font-semibold uppercase tracking-widest text-slate-400">
+                <a href="#" class="hover:text-emerald-400 transition">Renewals</a>
+                <a href="#" class="hover:text-emerald-400 transition">Watch Service</a>
+                <a href="#" class="hover:text-emerald-400 transition">Pricing</a>
             </div>
+            <button class="bg-emerald-600 hover:bg-emerald-500 text-white px-5 py-2 rounded-full text-xs font-bold transition shadow-lg shadow-emerald-900/20">
+                CLIENT LOGIN
+            </button>
         </div>
     </nav>
 
-    <header class="bg-white py-20 border-b border-gray-100">
-        <div class="max-w-7xl mx-auto px-6 text-center">
-            <h1 class="text-5xl md:text-6xl font-extrabold text-gray-900 mb-6 leading-tight">
-                Secure Your Brand's Future <br><span class="text-blue-600">Without the Complexity.</span>
+    <main class="hero-gradient pt-32 pb-20 px-6">
+        <div class="max-w-5xl mx-auto text-center">
+            <div class="inline-block px-4 py-1.5 mb-6 rounded-full border border-emerald-500/30 bg-emerald-500/10 text-emerald-400 text-[10px] font-bold uppercase tracking-[0.2em]">
+                India's First Transparent Trademark Engine
+            </div>
+            <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-8 tracking-tight leading-[1.1]">
+                Renew your Trademark. <br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400">Without the Broker Fee.</span>
             </h1>
-            <p class="text-xl text-gray-600 mb-10 max-w-3xl mx-auto">
-                Specialized end-to-end solutions for Trademark Renewals and Restorations in India. 
-                Transparent tracking, expert legal filing, and zero stress.
+            <p class="text-lg text-slate-400 mb-12 max-w-2xl mx-auto leading-relaxed">
+                We're destroying the black box of trademark renewals. Real-time tracking, 100% transparency, and a service fee that makes the "experts" nervous.
             </p>
-            
-            <div class="max-w-2xl mx-auto bg-white shadow-2xl rounded-xl p-2 border border-gray-100 flex flex-col md:flex-row gap-2">
-                <input id="appNumber" type="text" placeholder="Enter Trademark Application Number..." class="flex-1 px-6 py-4 outline-none text-lg">
-                <button onclick="trackStatus()" class="bg-corporate text-white px-10 py-4 rounded-lg font-bold hover:bg-blue-800 transition uppercase text-sm tracking-widest">
-                    Track Status
-                </button>
-            </div>
-            <div id="resultBox" class="mt-4 hidden p-4 rounded-lg bg-blue-50 text-blue-900 font-bold max-w-2xl mx-auto"></div>
-        </div>
-    </header>
 
-    <section class="py-20 max-w-7xl mx-auto px-6">
-        <div class="text-center mb-16">
-            <h2 class="text-3xl font-bold text-gray-900">Our Specialized Services</h2>
-            <div class="h-1 w-20 bg-blue-600 mx-auto mt-4"></div>
-        </div>
-        
-        <div class="grid md:grid-cols-3 gap-8">
-            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
-                <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mb-6">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor font-bold"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" /></svg>
+            <div class="max-w-xl mx-auto mb-20">
+                <div class="bg-slate-900/50 p-2 rounded-2xl border border-white/10 flex flex-col md:flex-row gap-2 shadow-2xl">
+                    <input type="text" placeholder="Enter Application Number (e.g. 543210)" class="bg-transparent flex-1 px-6 py-4 outline-none text-white placeholder-slate-500">
+                    <button class="bg-white text-black px-8 py-4 rounded-xl font-bold hover:bg-emerald-400 transition uppercase text-xs tracking-widest">
+                        Track & Renew
+                    </button>
                 </div>
-                <h3 class="text-xl font-bold mb-3">Trademark Renewal</h3>
-                <p class="text-gray-600">Timely filing of Form TM-R to ensure your brand protection never expires. We handle the deadlines so you don't have to.</p>
+                <div class="mt-4 flex justify-center space-x-6 text-[11px] font-bold uppercase tracking-widest text-slate-500">
+                    <span>Govt Fee: ₹9,000</span>
+                    <span class="text-emerald-500">+ Flat Service Fee</span>
+                </div>
             </div>
 
-            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
-                <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mb-6">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-left">
+                <div class="bento-card p-8 rounded-3xl md:col-span-2">
+                    <div class="h-8 w-8 bg-emerald-500/20 rounded-lg flex items-center justify-center mb-6 text-emerald-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor font-bold"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Automated Renewals</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Our engine monitors your expiration 365 days a year. When it's time, we file. You don't lift a finger.</p>
                 </div>
-                <h3 class="text-xl font-bold mb-3">Restoration</h3>
-                <p class="text-gray-600">Lapsed trademark? We specialize in restoring removed marks from the register using expert legal frameworks.</p>
-            </div>
 
-            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
-                <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mb-6">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01m-.01 4h.01" /></svg>
+                <div class="bento-card p-8 rounded-3xl">
+                    <div class="h-8 w-8 bg-cyan-500/20 rounded-lg flex items-center justify-center mb-6 text-cyan-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor font-bold"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Trademark Watch</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">We scan the TM Journal weekly. If someone copies you, we alert you immediately.</p>
                 </div>
-                <h3 class="text-xl font-bold mb-3">Status Monitoring</h3>
-                <p class="text-gray-600">Real-time alerts on your application status. Our proprietary tracker keeps you updated at every stage of the process.</p>
             </div>
         </div>
-    </section>
+    </main>
 
-    <footer class="bg-corporate py-12 text-white">
-        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
-            <div class="mb-6 md:mb-0">
-                <div class="text-xl font-bold mb-2">WEFILETRADEMARK</div>
-                <p class="text-blue-200 text-sm">Professional Trademark Services for Indian Businesses.</p>
-            </div>
-            <div class="text-sm text-blue-200">
-                &copy; 2026 Wefiletrademark.com | All Rights Reserved.
-            </div>
-        </div>
+    <footer class="py-12 border-t border-white/5 text-center">
+        <p class="text-[10px] text-slate-600 uppercase tracking-[0.3em]">Built for the future of Indian Intellectual Property</p>
     </footer>
 
-    <script>
-        function trackStatus() {
-            const appNo = document.getElementById('appNumber').value;
-            const resBox = document.getElementById('resultBox');
-            
-            if(!appNo) {
-                alert("Please enter an application number.");
-                return;
-            }
-
-            resBox.classList.remove('hidden');
-            resBox.innerText = "Searching for " + appNo + "...";
-            
-            // This is where we will hook up your Google Apps Script URL
-            console.log("Status search triggered for:", appNo);
-        }
-    </script>
 </body>
 </html>
