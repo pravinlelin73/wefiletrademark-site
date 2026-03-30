@@ -3,21 +3,29 @@
 <head>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body { background-color: #0f172a; color: #f1f5f9; font-family: 'Inter', sans-serif; }
-        .sea-card { background: rgba(30, 41, 59, 0.4); border-left: 4px solid #38bdf8; }
-        .btn-sea { background: #38bdf8; color: #0f172a; }
+        body { background-color: #18181b; color: #f4f4f5; font-family: 'Inter', sans-serif; }
+        .neon-text { color: #bef264; }
+        .neon-border { border: 1px solid #bef264; }
+        .neon-btn { background: #bef264; color: #000; box-shadow: 0 0 15px rgba(190, 242, 100, 0.3); }
     </style>
 </head>
-<body class="p-10">
-    <div class="max-w-6xl mx-auto">
-        <div class="text-2xl font-bold mb-32 tracking-tight">Wefile<span class="text-sky-400">trademark</span></div>
-        <h1 class="text-5xl md:text-7xl font-bold mb-10">Secure your legacy <br>with confidence.</h1>
-        <p class="text-sky-200/60 text-xl max-w-2xl mb-12 italic">Established protection for the modern Indian enterprise.</p>
-        <div class="bg-white/5 p-4 rounded-xl flex gap-4 max-w-2xl mb-20">
-            <input class="bg-transparent flex-1 px-4 outline-none" placeholder="Enter App Number">
-            <button class="btn-sea px-8 py-3 rounded-lg font-bold text-sm uppercase">Track Brand</button>
+<body class="p-10 antialiased">
+    <nav class="flex justify-between items-center mb-40 uppercase font-black tracking-widest text-[10px]">
+        <div>Wefiletrademark // 2026</div>
+        <div class="space-x-6"><a href="#" class="neon-text">Renewals</a> <a href="#">Watch</a> <a href="#">Vault</a></div>
+    </nav>
+    <div class="max-w-5xl mx-auto">
+        <h1 class="text-7xl md:text-9xl font-black uppercase mb-10 tracking-tighter leading-none">The <span class="neon-text">Kill-Shot</span> to <br>Broker Fees.</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-end">
+            <div class="space-y-6">
+                <p class="text-zinc-500 text-lg">We're built different. No office visits. No paper stacks. Just the tech you need to keep your brand yours.</p>
+                <div class="flex gap-2">
+                    <input class="bg-zinc-900 border border-zinc-800 rounded-lg flex-1 px-6 py-4 outline-none focus:neon-border" placeholder="App #">
+                    <button class="neon-btn px-10 py-4 rounded-lg font-black uppercase text-xs">Verify</button>
+                </div>
+            </div>
+            <div class="border-t-2 border-zinc-800 pt-6 text-[10px] uppercase font-bold text-zinc-600 tracking-widest">Pricing Transparency: Govt Fee ₹9000 + We Charge Flat ₹999</div>
         </div>
-        <div class="sea-card p-10 rounded-r-xl"><p class="text-sky-400 font-bold uppercase text-xs mb-2">Service Status</p><p class="text-2xl">TM Registry active. Processing time: 24h.</p></div>
     </div>
 </body>
 </html>
