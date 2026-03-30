@@ -1,44 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8"><script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body { background: #FFFFFF; color: #111827; font-family: 'Inter', sans-serif; }
+        body { background: #ffffff; color: #111111; font-family: 'Inter', sans-serif; }
         .dropdown:hover .dropdown-menu { display: block; }
-        .shadow-soft { box-shadow: 0 20px 50px rgba(0,0,0,0.05); }
+        .header-line { height: 1px; background: linear-gradient(to right, #000, transparent); }
     </style>
 </head>
-<body class="antialiased">
-    <nav class="max-w-7xl mx-auto p-8 flex justify-between items-center">
-        <div class="text-xl font-black tracking-tighter">WEFILE<span class="text-blue-600">TRADEMARK</span></div>
-        <div class="hidden md:flex space-x-12 text-[10px] font-black uppercase tracking-[0.3em] text-gray-400">
-            <div class="relative dropdown py-2">
+<body class="p-8">
+    <nav class="max-w-7xl mx-auto flex justify-between items-center mb-40">
+        <div class="text-2xl font-black tracking-tighter">WEFILE<span class="text-zinc-300">TRADEMARK</span></div>
+        <div class="hidden md:flex space-x-12 text-[11px] font-black uppercase tracking-widest text-zinc-400">
+            <div class="relative dropdown py-4">
                 <span class="hover:text-black cursor-pointer">Services</span>
-                <div class="dropdown-menu hidden absolute top-full -left-10 w-64 bg-white border border-gray-100 rounded-3xl p-4 shadow-soft mt-2">
-                    <a href="#" class="block p-4 hover:bg-gray-50 rounded-2xl font-bold text-black normal-case tracking-normal">Trademark Renewal</a>
-                    <a href="#" class="block p-4 hover:bg-gray-50 rounded-2xl font-bold text-black normal-case tracking-normal">Trademark Watch</a>
+                <div class="dropdown-menu hidden absolute top-full left-0 w-64 bg-white border-2 border-black p-4 mt-2">
+                    <a href="#" class="block p-3 hover:bg-black hover:text-white font-bold">Trademark Renewal</a>
+                    <a href="#" class="block p-3 hover:bg-black hover:text-white font-bold">Trademark Watch</a>
                 </div>
             </div>
-            <a href="#" class="hover:text-black">Blog</a>
-            <a href="#" class="hover:text-black">Pricing</a>
-            <a href="#" class="hover:text-black">Tools</a>
+            <a href="#" class="hover:text-black py-4">Blog</a>
+            <a href="#" class="hover:text-black py-4">Pricing</a>
+            <a href="#" class="hover:text-black py-4">Tools</a>
         </div>
-        <button class="bg-black text-white px-8 py-3 rounded-full text-[10px] font-bold uppercase tracking-widest">Get Started</button>
+        <button class="bg-black text-white px-10 py-4 font-black uppercase text-xs tracking-widest">Get Started</button>
     </nav>
-
-    <header class="max-w-5xl mx-auto pt-32 pb-40 px-6 text-center">
-        <p class="text-blue-600 font-bold text-xs uppercase tracking-widest mb-6">India's first Dedicated platform for Trademark renewals</p>
-        <h1 class="text-7xl md:text-9xl font-black tracking-tighter leading-[0.85] mb-10">
-            Professional <br><span class="text-gray-300">Brand Protection.</span>
-        </h1>
-        <p class="text-2xl text-gray-500 max-w-2xl mx-auto mb-16 font-medium leading-tight">
-            Stop overpaying legal brokers. Our platform automates your <span class="text-black">TM-R filings</span> directly with the Government of India.
-        </p>
-        <div class="flex flex-col md:flex-row justify-center gap-4">
-            <button class="bg-blue-600 text-white px-12 py-6 rounded-3xl font-black uppercase text-xs tracking-widest shadow-xl shadow-blue-200">Renew Today</button>
-            <button class="bg-white text-black border border-gray-200 px-12 py-6 rounded-3xl font-black uppercase text-xs tracking-widest hover:bg-gray-50 transition">Calculate My TM Renewal Fees</button>
+    <div class="max-w-5xl mx-auto">
+        <p class="text-xs font-black uppercase tracking-[0.4em] mb-10">India's first Dedicated platform for Trademark renewals</p>
+        <h1 class="text-6xl md:text-9xl font-[900] tracking-tighter uppercase leading-[0.8] mb-16">The End of <br>The Broker Era.</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-end">
+            <p class="text-xl font-bold leading-tight text-zinc-500">We digitized the Trademark Registry so you don't have to hire a middleman. 100% transparent. 100% legal.</p>
+            <div class="flex flex-col gap-4">
+                <button class="bg-black text-white py-6 font-black uppercase text-xs tracking-widest hover:bg-zinc-800">Renew Today</button>
+                <button class="border-2 border-black py-6 font-black uppercase text-xs tracking-widest hover:bg-zinc-50">Calculate My TM Renewal Fees</button>
+            </div>
         </div>
-    </header>
+    </div>
 </body>
 </html>
