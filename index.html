@@ -1,35 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        body { background-color: #020617; color: #f8fafc; font-family: 'Inter', sans-serif; }
-        .cyber-font { font-family: 'Space Grotesk', sans-serif; }
-        .cyan-glow { box-shadow: 0 0 20px rgba(6, 182, 212, 0.2); }
-        .bento-card { background: rgba(15, 23, 42, 0.6); border: 1px solid rgba(6, 182, 212, 0.1); backdrop-filter: blur(10px); }
-        .bento-card:hover { border-color: #06b6d4; box-shadow: 0 0 30px rgba(6, 182, 212, 0.1); }
+        body { background-color: #ffffff; color: #111827; font-family: 'Inter', sans-serif; }
+        .card { background: #f9fafb; border: 1px solid #e5e7eb; transition: 0.2s; }
+        .card:hover { border-color: #111827; background: #ffffff; }
     </style>
 </head>
 <body class="antialiased">
-    <nav class="p-8 flex justify-between items-center max-w-7xl mx-auto">
-        <div class="cyber-font text-2xl font-bold tracking-tighter uppercase">WEFILE<span class="text-cyan-400">TRADEMARK</span></div>
-        <div class="hidden md:flex space-x-10 text-[10px] font-bold uppercase tracking-[0.3em] text-slate-500">
-            <a href="#" class="hover:text-cyan-400">Systems</a> <a href="#" class="hover:text-cyan-400">Registry</a> <a href="#" class="hover:text-cyan-400">Protocol</a>
+    <nav class="max-w-7xl mx-auto p-10 flex justify-between items-center">
+        <div class="text-xl font-black tracking-tight">wefiletrademark.</div>
+        <div class="space-x-8 text-sm font-medium text-gray-500">
+            <a href="#" class="hover:text-black">Services</a> <a href="#" class="hover:text-black">Transparency</a>
         </div>
     </nav>
-    <header class="pt-20 pb-32 text-center px-6">
-        <h1 class="cyber-font text-6xl md:text-8xl font-bold mb-8 tracking-tighter italic">RENEWAL <span class="text-cyan-400">AUTOMATED.</span></h1>
-        <p class="text-slate-400 max-w-xl mx-auto mb-12 text-lg">Instant Form TM-R filing powered by our proprietary IP-Engine. Zero delays. Zero broker interference.</p>
-        <div class="max-w-xl mx-auto p-2 bento-card rounded-2xl cyan-glow flex flex-col md:flex-row gap-2">
-            <input class="bg-transparent flex-1 px-6 py-4 outline-none text-cyan-400 font-bold" placeholder="APPLICATION ID_">
-            <button class="bg-cyan-500 text-black px-10 py-4 rounded-xl font-black uppercase text-xs tracking-widest hover:bg-white transition">Execute Scan</button>
+    <main class="max-w-4xl mx-auto py-20 px-6">
+        <h1 class="text-6xl md:text-8xl font-black tracking-tighter mb-10 leading-[0.9]">Renewals made <br><span class="text-gray-400 underline decoration-1 underline-offset-8">painlessly simple.</span></h1>
+        <p class="text-2xl text-gray-500 mb-16 leading-tight">We removed the complex legal jargon. We removed the hidden commissions. Just clear, honest trademark protection.</p>
+        <div class="flex flex-col md:flex-row gap-4 mb-20">
+            <input class="flex-1 border-b-2 border-black py-4 outline-none text-xl placeholder-gray-300" placeholder="Your Application Number">
+            <button class="bg-black text-white px-12 py-5 font-bold uppercase text-[10px] tracking-widest">Get Started</button>
         </div>
-    </header>
-    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-6 pb-20">
-        <div class="bento-card p-10 rounded-[30px]"><h3 class="text-cyan-400 font-bold mb-4 uppercase tracking-widest text-xs font-bold">Protocol 01</h3><p class="text-2xl font-bold">24/7 Shield Monitoring</p></div>
-        <div class="bento-card p-10 rounded-[30px]"><h3 class="text-cyan-400 font-bold mb-4 uppercase tracking-widest text-xs font-bold">Protocol 02</h3><p class="text-2xl font-bold">Instant Journal Tracking</p></div>
-    </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+            <div class="card p-10"><h3 class="font-bold text-xl mb-4">Zero Broker Markup</h3><p class="text-gray-500">Pay the government fee directly. Our service fee is flat and public.</p></div>
+            <div class="card p-10"><h3 class="font-bold text-xl mb-4">Real-Time Status</h3><p class="text-gray-500">No more follow-up calls. See your status updated live on your dashboard.</p></div>
+        </div>
+    </main>
 </body>
 </html>
