@@ -3,29 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wefiletrademark | India's Expert Trademark Solutions</title>
+    <title>Wefiletrademark | Expert Trademark Renewals & Restorations</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .bg-corporate { background-color: #1e3a8a; } /* Muted Dark Blue */
+    </style>
 </head>
-<body class="bg-gray-50 font-sans">
+<body class="bg-gray-50 text-gray-800">
 
-    <nav class="bg-white shadow-sm py-4 px-8 flex justify-between items-center border-b border-gray-100">
-        <h1 class="text-2xl font-bold text-blue-900 tracking-tight">WEFILE<span class="text-blue-500">TRADEMARK</span></h1>
-        <div class="space-x-6 text-gray-600 font-medium">
-            <a href="#" class="hover:text-blue-600">Home</a>
-            <a href="#" class="hover:text-blue-600">Services</a>
-            <a href="#" class="bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition">Contact Us</a>
+    <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-blue-900 tracking-tighter">
+                WEFILE<span class="text-blue-600">TRADEMARK</span>
+            </div>
+            <div class="hidden md:flex space-x-8 font-medium text-sm uppercase tracking-wide">
+                <a href="#" class="hover:text-blue-600">Services</a>
+                <a href="#" class="hover:text-blue-600">Pricing</a>
+                <a href="#" class="hover:text-blue-600">About Us</a>
+                <a href="mailto:contact@wefiletrademark.com" class="text-blue-700 border border-blue-700 px-4 py-2 rounded hover:bg-blue-50 transition">Get Started</a>
+            </div>
         </div>
     </nav>
 
-    <section class="max-w-7xl mx-auto py-20 px-8 text-center">
-        <h2 class="text-5xl font-extrabold text-gray-900 mb-6">Transparent & Efficient <br><span class="text-blue-600">Trademark Solutions</span></h2>
-        <p class="text-xl text-gray-600 mb-10 max-w-2xl mx-auto">Skip the narrow limitations. Get end-to-end legal support for your brand registration and renewals with total transparency.</p>
+    <header class="bg-white py-20 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h1 class="text-5xl md:text-6xl font-extrabold text-gray-900 mb-6 leading-tight">
+                Secure Your Brand's Future <br><span class="text-blue-600">Without the Complexity.</span>
+            </h1>
+            <p class="text-xl text-gray-600 mb-10 max-w-3xl mx-auto">
+                Specialized end-to-end solutions for Trademark Renewals and Restorations in India. 
+                Transparent tracking, expert legal filing, and zero stress.
+            </p>
+            
+            <div class="max-w-2xl mx-auto bg-white shadow-2xl rounded-xl p-2 border border-gray-100 flex flex-col md:flex-row gap-2">
+                <input id="appNumber" type="text" placeholder="Enter Trademark Application Number..." class="flex-1 px-6 py-4 outline-none text-lg">
+                <button onclick="trackStatus()" class="bg-corporate text-white px-10 py-4 rounded-lg font-bold hover:bg-blue-800 transition uppercase text-sm tracking-widest">
+                    Track Status
+                </button>
+            </div>
+            <div id="resultBox" class="mt-4 hidden p-4 rounded-lg bg-blue-50 text-blue-900 font-bold max-w-2xl mx-auto"></div>
+        </div>
+    </header>
+
+    <section class="py-20 max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold text-gray-900">Our Specialized Services</h2>
+            <div class="h-1 w-20 bg-blue-600 mx-auto mt-4"></div>
+        </div>
         
-        <div class="bg-white p-4 rounded-2xl shadow-xl max-w-xl mx-auto flex gap-2 border border-gray-200">
-            <input type="text" placeholder="Enter Trademark Application No." class="flex-1 px-4 py-2 outline-none">
-            <button class="bg-blue-600 text-white px-6 py-2 rounded-xl font-bold hover:bg-blue-700">Track Status</button>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor font-bold"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" /></svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Trademark Renewal</h3>
+                <p class="text-gray-600">Timely filing of Form TM-R to ensure your brand protection never expires. We handle the deadlines so you don't have to.</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Restoration</h3>
+                <p class="text-gray-600">Lapsed trademark? We specialize in restoring removed marks from the register using expert legal frameworks.</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01m-.01 4h.01" /></svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Status Monitoring</h3>
+                <p class="text-gray-600">Real-time alerts on your application status. Our proprietary tracker keeps you updated at every stage of the process.</p>
+            </div>
         </div>
     </section>
 
+    <footer class="bg-corporate py-12 text-white">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-6 md:mb-0">
+                <div class="text-xl font-bold mb-2">WEFILETRADEMARK</div>
+                <p class="text-blue-200 text-sm">Professional Trademark Services for Indian Businesses.</p>
+            </div>
+            <div class="text-sm text-blue-200">
+                &copy; 2026 Wefiletrademark.com | All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function trackStatus() {
+            const appNo = document.getElementById('appNumber').value;
+            const resBox = document.getElementById('resultBox');
+            
+            if(!appNo) {
+                alert("Please enter an application number.");
+                return;
+            }
+
+            resBox.classList.remove('hidden');
+            resBox.innerText = "Searching for " + appNo + "...";
+            
+            // This is where we will hook up your Google Apps Script URL
+            console.log("Status search triggered for:", appNo);
+        }
+    </script>
 </body>
 </html>
