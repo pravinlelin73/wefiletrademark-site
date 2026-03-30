@@ -3,26 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=JetBrains+Mono&display=swap" rel="stylesheet">
     <style>
-        body { background-color: #F5F5F4; color: #262626; font-family: 'Inter', sans-serif; }
-        .card-soft { background: #FFFFFF; border-radius: 40px; box-shadow: 0 4px 60px rgba(0,0,0,0.02); }
+        body { background: #020617; color: #f8fafc; font-family: 'Inter', sans-serif; }
+        .dropdown:hover .dropdown-menu { display: block; }
+        .glass-header { background: rgba(2, 6, 23, 0.8); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255,255,255,0.05); }
+        .hero-gradient { background: radial-gradient(circle at 50% -20%, #1e293b 0%, #020617 80%); }
     </style>
 </head>
-<body class="p-8">
-    <main class="max-w-5xl mx-auto card-soft p-16 mt-10">
-        <div class="text-sm font-black uppercase tracking-[0.4em] text-stone-400 mb-20">Wefiletrademark / Transparency Protocol</div>
-        <h1 class="text-7xl font-bold tracking-tight mb-12">Expert protection <br>without the <span class="italic text-stone-400">complexity.</span></h1>
-        <div class="flex flex-col md:flex-row gap-6 mb-20">
-            <div class="flex-1 bg-stone-100 p-8 rounded-3xl">
-                <p class="text-[10px] font-black uppercase mb-4 text-stone-500">Service Selection</p>
-                <p class="text-2xl font-bold">Trademark Renewal (TM-R)</p>
+<body>
+    <nav class="glass-header fixed w-full z-50 top-0">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+            <div class="text-2xl font-black tracking-tighter uppercase">WEFILE<span class="text-emerald-500">TRADEMARK</span></div>
+            <div class="hidden md:flex items-center space-x-10 text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400">
+                <div class="relative dropdown group cursor-pointer py-4">
+                    <span class="group-hover:text-emerald-400 transition flex items-center">Services <svg class="ml-1 w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"></path></svg></span>
+                    <div class="dropdown-menu hidden absolute top-full left-0 w-64 bg-slate-900 border border-white/10 rounded-2xl p-4 shadow-2xl">
+                        <a href="#" class="block p-4 hover:bg-emerald-500/10 rounded-xl transition">
+                            <p class="text-white text-xs mb-1">Trademark Renewal</p>
+                            <p class="text-[9px] lowercase tracking-normal text-slate-500 italic">Instant TM-R Filing</p>
+                        </a>
+                        <a href="#" class="block p-4 hover:bg-emerald-500/10 rounded-xl transition">
+                            <p class="text-white text-xs mb-1">Trademark Watch</p>
+                            <p class="text-[9px] lowercase tracking-normal text-slate-500 italic">Weekly Journal Surveillance</p>
+                        </a>
+                    </div>
+                </div>
+                <a href="#" class="hover:text-emerald-400 transition">Blog</a>
+                <a href="#" class="hover:text-emerald-400 transition">Pricing</a>
+                <a href="#" class="hover:text-emerald-400 transition">Tools</a>
             </div>
-            <div class="flex-1 bg-stone-900 text-stone-100 p-8 rounded-3xl flex items-center justify-between">
-                <span class="text-xl font-bold">Start Filing</span>
-                <span class="text-2xl">→</span>
+            <button class="bg-emerald-500 text-black px-6 py-2 rounded-full text-[10px] font-black uppercase tracking-widest">Portal</button>
+        </div>
+    </nav>
+
+    <header class="hero-gradient pt-48 pb-32 px-6">
+        <div class="max-w-5xl mx-auto text-center">
+            <div class="inline-block px-4 py-1 mb-8 rounded-full border border-emerald-500/20 bg-emerald-500/5 text-emerald-400 text-[10px] font-bold uppercase tracking-widest">
+                India's first Dedicated platform for Trademark renewals
+            </div>
+            <h1 class="text-6xl md:text-8xl font-black mb-8 tracking-tighter leading-none">
+                SECURE YOUR BRAND.<br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400 italic">SKIP THE BROKER.</span>
+            </h1>
+            <p class="text-xl text-slate-400 max-w-2xl mx-auto mb-12 font-medium">
+                We automate the complex world of TM-R filings. Direct to Registry. 
+                <span class="text-white">Zero hidden commissions. 100% transparency.</span>
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <button class="bg-emerald-500 hover:bg-emerald-400 text-black px-12 py-5 rounded-2xl font-black uppercase text-xs tracking-[0.2em] transition-all transform active:scale-95">Renew Today</button>
+                <button class="bg-slate-800 hover:bg-slate-700 text-white px-12 py-5 rounded-2xl font-black uppercase text-xs tracking-[0.2em] border border-white/10 transition-all">Calculate My TM Renewal Fees</button>
             </div>
         </div>
-        <p class="text-stone-400 font-medium">India's first direct-to-registry platform. Established 2026.</p>
-    </main>
+    </header>
 </body>
 </html>
