@@ -2,47 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
     <style>
-        body { background-color: #F8FAFC; color: #0F172A; font-family: 'Inter', sans-serif; }
-        .bento-light { background: #FFFFFF; border: 1px solid #E2E8F0; transition: 0.3s; }
-        .bento-light:hover { border-color: #2563EB; box-shadow: 0 20px 40px rgba(0,0,0,0.05); }
+        body { background-color: #FFFDF9; color: #1C1917; font-family: 'Inter', sans-serif; }
+        .heritage-card { background: #FFFFFF; border: 1px solid #F1F5F9; box-shadow: 0 10px 30px rgba(245, 158, 11, 0.05); transition: 0.4s; }
+        .heritage-card:hover { transform: translateY(-5px); border-color: #F59E0B; }
     </style>
 </head>
 <body class="antialiased">
-    <nav class="p-10 flex justify-between items-center max-w-7xl mx-auto">
-        <div class="text-2xl font-black tracking-tighter uppercase">WEFILE<span class="text-blue-600">TRADEMARK</span></div>
-        <div class="hidden md:flex space-x-8 text-[10px] font-bold uppercase tracking-[0.3em] text-slate-400">
-            <a href="#" class="hover:text-blue-600">Renewals</a> <a href="#" class="hover:text-blue-600">Watch</a> <a href="#" class="hover:text-blue-600">Pricing</a>
-        </div>
-        <button class="bg-blue-600 text-white px-8 py-3 rounded-full text-xs font-bold uppercase tracking-widest">Portal</button>
+    <nav class="max-w-7xl mx-auto p-10 flex justify-between items-center border-b border-orange-100">
+        <div class="text-2xl font-black tracking-tight uppercase">WEFILE<span class="text-orange-500">TRADEMARK</span></div>
+        <div class="text-[10px] font-black tracking-[0.3em] uppercase text-stone-400">Atmanirbhar IP Solutions</div>
     </nav>
-    <main class="max-w-6xl mx-auto pt-20 pb-40 px-6 text-center">
-        <h1 class="text-6xl md:text-8xl font-[900] tracking-tighter leading-none mb-8">
-            The New Standard of <br><span class="text-blue-600 italic">Trademark Trust.</span>
-        </h1>
-        <p class="text-slate-500 text-xl max-w-2xl mx-auto mb-16 leading-relaxed">
-            Eliminating broker markups with India's first fully transparent IP engine. 
-            Direct registry filing starting at <span class="text-blue-600 font-bold">₹999.</span>
-        </p>
-        <div class="max-w-xl mx-auto bg-white p-2 rounded-[30px] border border-slate-200 shadow-xl flex flex-col md:flex-row gap-2 mb-20">
-            <input class="flex-1 px-8 py-5 outline-none text-xl font-bold bg-transparent" placeholder="Application Number">
-            <button class="bg-blue-600 text-white px-10 py-5 rounded-2xl font-black uppercase text-xs tracking-widest">Track Now</button>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
-            <div class="bento-light p-10 rounded-[40px]">
-                <h3 class="text-blue-600 font-bold mb-4 uppercase tracking-widest text-[10px]">Service 01</h3>
-                <p class="text-2xl font-black mb-2">Instant Renewal</p>
-                <p class="text-slate-400 text-sm">Direct Form TM-R submission in 24 hours.</p>
+    <section class="max-w-6xl mx-auto pt-32 pb-40 px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+            <div>
+                <div class="w-12 h-1 bg-orange-500 mb-8"></div>
+                <h1 class="text-6xl md:text-7xl font-black mb-8 leading-[0.95]">Protecting the <br><span class="text-orange-500">Identity</span> of India.</h1>
+                <p class="text-stone-500 text-xl mb-12">No hidden commissions. No middleman. Just expert trademark renewals for the modern Indian enterprise.</p>
+                <div class="flex gap-4">
+                    <input class="flex-1 border-b-2 border-stone-200 py-4 outline-none text-xl bg-transparent focus:border-orange-500 transition" placeholder="Application Number">
+                    <button class="bg-stone-900 text-white px-10 py-5 rounded-full font-bold uppercase text-xs tracking-widest hover:bg-orange-500 transition">Track</button>
+                </div>
             </div>
-            <div class="bento-light p-10 rounded-[40px] md:col-span-2">
-                <h3 class="text-blue-600 font-bold mb-4 uppercase tracking-widest text-[10px]">Service 02</h3>
-                <p class="text-2xl font-black mb-2">The Watchdog Engine</p>
-                <p class="text-slate-400 text-sm">AI-driven journal scanning to protect your brand from infringers.</p>
+            <div class="grid grid-cols-1 gap-6">
+                <div class="heritage-card p-10 rounded-3xl">
+                    <p class="text-orange-500 font-black mb-2 text-xs">RENEWALS</p>
+                    <p class="text-2xl font-bold">Transparent ₹999 Fee</p>
+                </div>
+                <div class="heritage-card p-10 rounded-3xl">
+                    <p class="text-orange-500 font-black mb-2 text-xs">WATCH SERVICE</p>
+                    <p class="text-2xl font-bold">24/7 Journal Monitoring</p>
+                </div>
             </div>
         </div>
-    </main>
+    </section>
 </body>
 </html>
