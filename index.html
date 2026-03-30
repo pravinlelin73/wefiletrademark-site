@@ -4,25 +4,19 @@
     <meta charset="UTF-8">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body { background-color: #FFFFFF; color: #020617; font-family: 'Inter', sans-serif; }
-        .glass-ui { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(20px); border: 1px solid #F1F5F9; }
-        .emerald-glow { box-shadow: 0 0 40px rgba(16, 185, 129, 0.1); }
+        body { background-color: #FFFFFF; color: #064E3B; font-family: 'Inter', sans-serif; }
+        .thick-border { border: 4px solid #064E3B; }
     </style>
 </head>
-<body class="p-6">
-    <div class="max-w-7xl mx-auto glass-ui rounded-[40px] min-h-screen emerald-glow overflow-hidden">
-        <nav class="p-10 flex justify-between">
-            <div class="text-xl font-black uppercase">WFT.</div>
-            <div class="space-x-10 text-xs font-bold uppercase tracking-widest">
-                <a href="#">Engine</a> <a href="#">Pricing</a> <a href="#">Portal</a>
-            </div>
-        </nav>
-        <div class="text-center pt-32 pb-40">
-            <h1 class="text-9xl font-black tracking-tighter mb-10">THE <span class="text-emerald-500 italic">ENGINE.</span></h1>
-            <div class="max-w-lg mx-auto bg-slate-50 p-2 rounded-2xl flex gap-2">
-                <input class="bg-transparent flex-1 px-6 outline-none font-bold" placeholder="TRADEMARK ID">
-                <button class="bg-emerald-500 text-white px-8 py-4 rounded-xl font-black text-xs uppercase">Renew Now</button>
-            </div>
+<body class="p-10 antialiased">
+    <header class="max-w-6xl mx-auto py-20 border-b-8 border-emerald-900">
+        <h1 class="text-8xl md:text-[12rem] font-black uppercase leading-none tracking-tighter">TRUTH IN <br>TRADEMARK.</h1>
+    </header>
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-20 py-20">
+        <p class="text-3xl font-bold leading-tight italic">We're destroying the black box. No hidden commissions. No fake legal fees. Just the law, digitized.</p>
+        <div class="space-y-10">
+            <input class="w-full border-b-4 border-emerald-900 py-6 text-4xl outline-none font-black uppercase" placeholder="APP NUMBER">
+            <button class="bg-emerald-900 text-white w-full py-8 text-2xl font-black uppercase hover:bg-emerald-500 transition">Execute Renewal</button>
         </div>
     </div>
 </body>
